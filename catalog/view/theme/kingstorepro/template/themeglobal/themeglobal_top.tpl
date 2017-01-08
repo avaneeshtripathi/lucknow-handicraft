@@ -1,5 +1,5 @@
 <?php $grid_center = 12; if($column_left != '') { $grid_center = $grid_center-3; } if($column_right != '') { $grid_center = $grid_center-3; } ?>
-<?php 
+<?php
 	require_once( DIR_TEMPLATE.$config->get('config_template')."/lib/module.php" );
 	$modules = new Modules($this->registry);
 ?>
@@ -22,9 +22,9 @@
 	================================================== -->
 <div class="main-content full-width inner-page">
 			<div class="container">
-				
+
 				<div class="row">
-					<?php 
+					<?php
 					$columnleft = $modules->getModules('column_left');
 					$headerleft = $modules->getModules('header_left');
 					if( count($columnleft) or count($headerleft) ) { ?>
@@ -34,7 +34,7 @@
 							echo $module;
 						}
 						?>
-					
+
 						<?php
 						foreach ($columnleft as $module) {
 							echo $module;
@@ -42,30 +42,30 @@
 						?>
 					</div>
 					<?php } ?>
-					
+
 					<?php $grid_center = 12; if( count($columnleft) or count($headerleft) ) { $grid_center = 9; } ?>
 					<div class="col-sm-<?php echo $grid_center; ?>">
-						<?php 
+						<?php
 						$content_big_column = $modules->getModules('content_big_column');
-						if( count($content_big_column) ) { 
+						if( count($content_big_column) ) {
 							foreach ($content_big_column as $module) {
 								echo $module;
 							}
 						} ?>
-						
-						<?php 
+
+						<?php
 						$content_top = $modules->getModules('content_top');
-						if( count($content_top) ) { 
+						if( count($content_top) ) {
 							foreach ($content_top as $module) {
 								echo $module;
 							}
 						} ?>
-						
+
 						<div class="row">
-							<?php 
-							$grid_content_top = 12; 
+							<?php
+							$grid_content_top = 12;
 							$grid_content_right = 3;
-							$column_right = $modules->getModules('column_right'); 
+							$column_right = $modules->getModules('column_right');
 							if( count($column_right) ) {
 								if($grid_center == 9) {
 									$grid_content_top = 8;
@@ -77,12 +77,6 @@
 							}
 							?>
 							<div class="col-sm-<?php echo $grid_content_top; ?> center-column">
-							
-								<h2 id="title-page"><?php echo $heading_title; ?>
-									<?php if(isset($weight)) { if ($weight) { ?>
-									&nbsp;(<?php echo $weight; ?>)
-									<?php } } ?>
-								</h2>
 
 								<?php if (isset($error_warning)) { ?>
 									<?php if ($error_warning) { ?>
@@ -91,7 +85,7 @@
 									</div>
 									<?php } ?>
 								<?php } ?>
-								
+
 								<?php if (isset($success)) { ?>
 									<?php if ($success) { ?>
 									<div class="success">
