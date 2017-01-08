@@ -1,0 +1,141 @@
+2016-11-19 13:46:13 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\wamp\www\mycart\system\library\mail.php on line 164
+2016-11-19 18:09:43 - PHP Warning:  unlink(C:/wamp/www/mycart/system/cache/cache.country.status.1479572970): No such file or directory in C:\wamp\www\mycart\system\library\cache\file.php on line 17
+2016-11-19 18:09:43 - PHP Warning:  unlink(C:/wamp/www/mycart/system/cache/cache.tax_class.1479571123): No such file or directory in C:\wamp\www\mycart\system\library\cache\file.php on line 17
+2016-11-19 21:57:55 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-19 21:57:55 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 94
+2016-11-19 21:57:55 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-19 21:57:55 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-19 21:57:55 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-19 21:57:55 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 89
+2016-11-19 21:57:55 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 90
+2016-11-19 21:57:55 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 91
+2016-11-19 21:57:55 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 92
+2016-11-19 21:57:55 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-19 21:57:55 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-19 21:57:55 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-19 21:57:55 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 94
+2016-11-19 21:57:55 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-19 21:57:55 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-19 21:57:55 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-19 21:57:55 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 89
+2016-11-19 21:57:55 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 90
+2016-11-19 21:57:55 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 91
+2016-11-19 21:57:55 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 92
+2016-11-19 21:57:55 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-19 21:57:55 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-19 21:57:56 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-19 21:57:56 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 94
+2016-11-19 21:57:56 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-19 21:57:56 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-19 21:57:56 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-19 21:57:56 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 94
+2016-11-19 21:57:56 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-19 21:57:56 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-19 21:59:06 - PHP Notice:  Undefined index: tabs in C:\wamp\www\mycart\catalog\controller\module\tg_kspro_filter_product.php on line 30
+2016-11-19 22:00:08 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-19 22:00:08 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 94
+2016-11-19 22:00:08 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-19 22:00:08 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-19 22:00:08 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-19 22:00:08 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 89
+2016-11-19 22:00:08 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 90
+2016-11-19 22:00:08 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 91
+2016-11-19 22:00:08 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 92
+2016-11-19 22:00:08 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-19 22:00:08 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-19 22:00:09 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-19 22:00:09 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 94
+2016-11-19 22:00:09 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-19 22:00:09 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-19 22:00:09 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-19 22:00:09 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 89
+2016-11-19 22:00:09 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 90
+2016-11-19 22:00:09 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 91
+2016-11-19 22:00:09 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 92
+2016-11-19 22:00:09 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-19 22:00:09 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-20 15:08:05 - PHP Notice:  Undefined index: tabs in C:\wamp\www\mycart\catalog\controller\module\tg_kspro_filter_product.php on line 30
+2016-11-20 15:09:32 - PHP Notice:  Undefined index: tabs in C:\wamp\www\mycart\catalog\controller\module\tg_kspro_filter_product.php on line 30
+2016-11-20 15:09:32 - PHP Notice:  Undefined index: tabs in C:\wamp\www\mycart\catalog\controller\module\tg_kspro_filter_product.php on line 31
+2016-11-20 15:11:13 - PHP Notice:  Undefined index: tabs in C:\wamp\www\mycart\catalog\controller\module\tg_kspro_filter_product.php on line 30
+2016-11-20 15:45:57 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-20 15:45:57 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 94
+2016-11-20 15:45:57 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-20 15:45:57 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-20 15:45:58 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-20 15:45:58 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 89
+2016-11-20 15:45:58 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 90
+2016-11-20 15:45:58 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 91
+2016-11-20 15:45:58 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 92
+2016-11-20 15:45:58 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-20 15:45:58 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-20 15:45:58 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-20 15:45:58 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 89
+2016-11-20 15:45:58 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 90
+2016-11-20 15:45:58 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 91
+2016-11-20 15:45:58 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 92
+2016-11-20 15:45:58 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-20 15:45:58 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-20 15:45:58 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-20 15:45:58 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 94
+2016-11-20 15:45:58 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-20 15:45:58 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-20 15:46:34 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-20 15:46:34 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 94
+2016-11-20 15:46:34 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-20 15:46:34 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-20 15:46:34 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-20 15:46:34 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 89
+2016-11-20 15:46:34 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 90
+2016-11-20 15:46:34 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 91
+2016-11-20 15:46:34 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 92
+2016-11-20 15:46:34 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-20 15:46:34 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-20 15:46:34 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-20 15:46:34 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 89
+2016-11-20 15:46:34 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 90
+2016-11-20 15:46:34 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 91
+2016-11-20 15:46:34 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 92
+2016-11-20 15:46:34 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-20 15:46:34 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-20 15:46:34 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-20 15:46:34 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 94
+2016-11-20 15:46:34 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-20 15:46:34 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-20 15:47:11 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-20 15:47:11 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 94
+2016-11-20 15:47:11 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-20 15:47:11 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-20 15:47:11 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-20 15:47:11 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 89
+2016-11-20 15:47:11 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 90
+2016-11-20 15:47:11 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 91
+2016-11-20 15:47:11 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 92
+2016-11-20 15:47:11 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-20 15:47:11 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-20 15:47:11 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-20 15:47:11 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 89
+2016-11-20 15:47:11 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 90
+2016-11-20 15:47:11 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 91
+2016-11-20 15:47:11 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 92
+2016-11-20 15:47:11 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-20 15:47:11 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-20 15:47:11 - PHP Warning:  imagecreatetruecolor() expects parameter 1 to be long, string given in C:\wamp\www\mycart\system\library\image.php on line 86
+2016-11-20 15:47:11 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 94
+2016-11-20 15:47:11 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 97
+2016-11-20 15:47:11 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\wamp\www\mycart\system\library\image.php on line 99
+2016-11-20 16:05:05 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\wamp\www\mycart\system\library\mail.php on line 164
+2016-11-20 16:06:00 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\wamp\www\mycart\system\library\mail.php on line 164
+2016-11-20 16:06:01 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\wamp\www\mycart\system\library\mail.php on line 164
+2016-11-20 16:13:23 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\wamp\www\mycart\system\library\mail.php on line 164
+2016-11-20 16:13:24 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\wamp\www\mycart\system\library\mail.php on line 164
+2016-11-20 16:17:34 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\wamp\www\mycart\system\library\mail.php on line 164
+2016-11-20 16:17:35 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\wamp\www\mycart\system\library\mail.php on line 164
+2016-11-20 21:14:21 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\wamp\www\mycart\system\library\mail.php on line 164
+2016-11-20 21:14:22 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\wamp\www\mycart\system\library\mail.php on line 164
+2016-11-20 21:15:28 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\wamp\www\mycart\system\library\mail.php on line 164
+2016-11-20 21:15:29 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\wamp\www\mycart\system\library\mail.php on line 164
+2016-11-21 16:18:48 - PHP Warning:  unlink(C:/wamp/www/mycart/system/cache/cache.language.1479676219): Permission denied in C:\wamp\www\mycart\system\library\cache\file.php on line 17
+2016-11-23 15:52:33 - PHP Warning:  unlink(C:/wamp/www/mycart/system/cache/cache.store.1479752381): No such file or directory in C:\wamp\www\mycart\system\library\cache\file.php on line 17
+2016-11-24 17:41:13 - PHP Warning:  unlink(C:/wamp/www/mycart/system/cache/cache.language.1479967207): Permission denied in C:\wamp\www\mycart\system\library\cache\file.php on line 17
+2016-11-27 6:44:43 - PHP Warning:  unlink(C:/wamp/www/mycart/system/cache/cache.currency.1480100382): No such file or directory in C:\wamp\www\mycart\system\library\cache\file.php on line 17
