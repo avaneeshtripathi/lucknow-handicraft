@@ -47,7 +47,10 @@ class ControllerCommonHeader extends Controller {
 
 		$data['text_account'] = $this->language->get('text_account');
 		$data['text_register'] = $this->language->get('text_register');
-		$data['text_login'] = $this->language->get('text_login');
+
+		// avaneesh's changes here
+		// $data['text_login'] = $this->language->get('text_login');
+		$data['text_login'] = isset($_SESSION['shipping_address']['firstname']) ? 'Hi '.ucfirst(strtolower($_SESSION['shipping_address']['firstname'])).' !' : $this->language->get('text_login');
 		$data['text_order'] = $this->language->get('text_order');
 		$data['text_transaction'] = $this->language->get('text_transaction');
 		$data['text_download'] = $this->language->get('text_download');
