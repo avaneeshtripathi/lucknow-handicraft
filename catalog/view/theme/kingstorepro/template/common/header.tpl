@@ -1,18 +1,18 @@
-<?php 
-if($this->registry->has('theme_options') == false) { 
-	header("location: themeinstall/index.php"); 
-	exit; 
-} 
+<?php
+if($this->registry->has('theme_options') == false) {
+	header("location: themeinstall/index.php");
+	exit;
+}
 $theme_options = $this->registry->get('theme_options');
 $config = $this->registry->get('config');
 require_once( DIR_TEMPLATE.$config->get('config_template')."/lib/module.php" );
 $modules = new Modules($this->registry);
 ?>
 <!DOCTYPE html>
-<!--[if IE 7]> <html lang="<?php echo $lang; ?>" class="ie7 responsive"> <![endif]-->  
-<!--[if IE 8]> <html lang="<?php echo $lang; ?>" class="ie8 responsive"> <![endif]-->  
-<!--[if IE 9]> <html lang="<?php echo $lang; ?>" class="ie9 responsive"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="<?php echo $lang; ?>" class="responsive"> <!--<![endif]-->  
+<!--[if IE 7]> <html lang="<?php echo $lang; ?>" class="ie7 responsive"> <![endif]-->
+<!--[if IE 8]> <html lang="<?php echo $lang; ?>" class="ie8 responsive"> <![endif]-->
+<!--[if IE 9]> <html lang="<?php echo $lang; ?>" class="ie9 responsive"> <![endif]-->
+<!--[if !IE]><!--> <html lang="<?php echo $lang; ?>" class="responsive"> <!--<![endif]-->
 <head>
 	<title><?php echo $title; ?></title>
 	<base href="<?php echo $base; ?>" />
@@ -27,21 +27,21 @@ $modules = new Modules($this->registry);
 	<?php if ($keywords) { ?>
 	<meta name="keywords" content="<?php echo $keywords; ?>" />
 	<?php } ?>
-	
+
 	<?php if ($icon) { ?>
 	<link href="<?php echo $icon; ?>" rel="icon" />
 	<?php } ?>
 	<?php foreach ($links as $link) { ?>
 	<link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
 	<?php } ?>
-	
+
 	<!-- Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,400italic,300italic,500italic,700,700italic,900,900italic,100italic,100&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300,300italic,400italic,700italic&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
-	
 
-	
-	
+
+
+
 	<?php $listcssjs = array(
 			'catalog/view/theme/'.$config->get( 'config_template' ).'/css/bootstrap.css',
 			'catalog/view/theme/'.$config->get( 'config_template' ).'/css/stylesheet.css',
@@ -49,108 +49,108 @@ $modules = new Modules($this->registry);
 			'catalog/view/theme/'.$config->get( 'config_template' ).'/css/menu.css',
 			'catalog/view/theme/'.$config->get( 'config_template' ).'/css/font-awesome.min.css',
 			'catalog/view/theme/'.$config->get( 'config_template' ).'/css/owl.carousel.css',
-			'catalog/view/theme/'.$config->get( 'config_template' ).'/css/slider.css', 
+			'catalog/view/theme/'.$config->get( 'config_template' ).'/css/slider.css',
 			'catalog/view/theme/'.$config->get( 'config_template' ).'/css/magnific-popup.css'
-	); 
-	
+	);
+
 	// Carousel brands
 	if($config->get( 'carousel_module' ) != '') $listcssjs[] = 'catalog/view/theme/'.$config->get( 'config_template' ).'/css/carousel.css';
-	
+
 	// Nivo slider
 	if($config->get( 'slideshow_module' ) != '') $listcssjs[] = 'catalog/view/theme/' . $config->get( 'config_template' ) . '/css/slideshow.css';
-		
+
 	if($theme_options->get( 'page_width' ) == 1) {
 		$listcssjs[] = 'catalog/view/theme/'.$config->get( 'config_template' ).'/css/wide-grid.css';
-	} 
-	
+	}
+
 	if($theme_options->get( 'page_width' ) == 3) {
 		$listcssjs[] = 'catalog/view/theme/'.$config->get( 'config_template' ).'/css/standard-grid.css';
-	} 
-		
+	}
+
 	?>
-		
+
 	<?php echo $theme_options->compressorCodeCss( $config->get( 'config_template' ), $listcssjs, $theme_options->get( 'compressor_code_status' ), HTTP_SERVER ); ?>
-	
+
 	<?php if($theme_options->get( 'colors_status' ) == 1) { ?>
 	<style type="text/css">
-		a:hover, #welcome a:hover,.product-list .actions > div .price, .product-list .name a:hover, .rating i.active, .product-grid .product .name a:hover, .product-grid .product .price,  
+		a:hover, #welcome a:hover,.product-list .actions > div .price, .product-list .name a:hover, .rating i.active, .product-grid .product .name a:hover, .product-grid .product .price,
 		.box-information > ul > li > a:hover, .category-list a:hover, .product-compare a:hover, .product-filter .options .button-group button:hover,.product-filter .options .button-group .active,
-		.tab-content .prev-button:hover,.tab-content .next-button:hover, .box .prev-button:hover,.box .prev-button span:hover, .box .prev-button2:hover,.box .prev-button2 span:hover, 
+		.tab-content .prev-button:hover,.tab-content .next-button:hover, .box .prev-button:hover,.box .prev-button span:hover, .box .prev-button2:hover,.box .prev-button2 span:hover,
 		.box .next-button:hover ,.box .next-button span:hover,.box .next-button2:hover ,.box .next-button2 span:hover, .bnews-list .artblock .article-meta a:hover, ul.megamenu_vertical > li:hover a,
 		ul.megamenu_vertical > li > a:hover, ul.megamenu_vertical > li.active > a, ul.megamenu_vertical > li.home > a, ul.megamenu_vertical > li:hover > a, ul.megamenu_vertical li .product .price,
 		ul.megamenu_vertical li .sub-menu_vertical .content .static-menu_vertical a.main-menu_vertical:hover, ul.megamenu_vertical li .sub-menu_vertical .content .hover-menu_vertical li > a:hover
-		
+
 		{
 			color: <?php echo $theme_options->get( 'primary_color' ); ?>;
 		}
-		
+
 		.button:hover, #header  .button-search:hover, #cart .cart-heading, .product-list  .product-icon, .product-grid .product .product-icon, .product-grid .product .image .quickview a, .scrollup,
 		.product-info .product-icon, .product-info .description .fa, ul.megamenu > li:hover, .responsive #megaMenuToggle, .responsive .tg-search, .htabs a:hover, .htabs a.selected
-		
+
 		{
 			background: none repeat scroll 0 0 <?php echo $theme_options->get( 'primary_color' ); ?>;
-		}	
-		
+		}
+
 		.box-heading::before, .filter-product .filter-tabs ul::before {
 			border-bottom: 2px solid <?php echo $theme_options->get( 'primary_color' ); ?>;
-		}	
-		.sale, .tab-content .prev-button span:hover, .tab-content .next-button span:hover, .box .next-button span:hover, .box .prev-button span:hover, .box .next-button2 span:hover, .box .prev-button2 span:hover 
+		}
+		.sale, .tab-content .prev-button span:hover, .tab-content .next-button span:hover, .box .next-button span:hover, .box .prev-button span:hover, .box .next-button2 span:hover, .box .prev-button2 span:hover
 		{
 			color: <?php echo $theme_options->get( 'primary_color' ); ?>;
 			border: 1px solid <?php echo $theme_options->get( 'primary_color' ); ?>;
 		}
-		
-			
+
+
 		#header .button-search, .megamenu-wrapper, .copyright, .button , .product-list  .product-icon:hover, .product-grid .product .product-icon:hover, .product-grid .product .image .quickview a:hover ,
 		.product-info .product-icon:hover, .htabs a
-		{	
+		{
 			background: <?php echo $theme_options->get( 'primary_hover_color' ); ?>;
-		}	
-		.product-filter .options .button-group button {	
+		}
+		.product-filter .options .button-group button {
 			color: <?php echo $theme_options->get( 'primary_hover_color' ); ?>;
-		}	
-		
+		}
+
 	</style>
 	<?php } ?>
-	
+
 	<?php if($theme_options->get( 'background_status' ) == 1) { ?>
 	<style type="text/css">
-		
+
 		<?php if($theme_options->get( 'body_background_background' ) == '0' && $theme_options->get( 'body_color' ) != '') { ?>
 			body {background: <?php echo $theme_options->get( 'body_color' ); ?>!important;}
 		<?php } ?>
-	
-		<?php if($theme_options->get( 'body_background_background' ) == '1') { ?> 
+
+		<?php if($theme_options->get( 'body_background_background' ) == '1') { ?>
 		body { background:none !important; }
 		<?php } ?>
-		<?php if($theme_options->get( 'body_background_background' ) == '2') { ?> 
+		<?php if($theme_options->get( 'body_background_background' ) == '2') { ?>
 		body { background-image:url(image/<?php echo $theme_options->get( 'body_background' ); ?>);background-position:<?php echo $theme_options->get( 'body_background_position' ); ?>;background-repeat:<?php echo $theme_options->get( 'body_background_repeat' ); ?> !important;background-attachment:<?php echo $theme_options->get( 'body_background_attachment' ); ?> !important; }
 		<?php } ?>
-	
+
 	</style>
 	<?php } ?>
-	
+
 	<?php if($theme_options->get( 'custom_code_css_status' ) == 1) { ?>
 	<link rel="stylesheet" href="catalog/view/theme/<?php echo $config->get( 'config_template' ); ?>/skins/store_<?php echo $theme_options->get( 'store' ); ?>/<?php echo $theme_options->get( 'skin' ); ?>/css/custom_code.css">
 	<?php } ?>
 
-	
-	
-	
+
+
+
 	<?php if($theme_options->get( 'page_width' ) == 2 && $theme_options->get( 'max_width' ) > 900) { ?>
 	<style type="text/css">
 		.standard-body .full-width .container {
 			max-width: <?php echo $theme_options->get( 'max_width' ); ?>px;
 		}
-		
+
 		.standard-body .fixed .background,
 		.main-fixed {
 			max-width: <?php echo $theme_options->get( 'max_width' )-40; ?>px;
 		}
 	</style>
 	<?php } ?>
-    
-    	<?php $listcssjs = array(); 
+
+    	<?php $listcssjs = array();
     $listcssjs[] = 'catalog/view/theme/'.$config->get( 'config_template' ).'/js/jquery.min.js';
     $listcssjs[] = 'catalog/view/theme/'.$config->get( 'config_template' ).'/js/jquery-migrate-1.2.1.min.js';
     $listcssjs[] = 'catalog/view/theme/'.$config->get( 'config_template' ).'/js/jquery.easing.1.3.js';
@@ -158,26 +158,26 @@ $modules = new Modules($this->registry);
     $listcssjs[] = 'catalog/view/theme/'.$config->get( 'config_template' ).'/js/twitter-bootstrap-hover-dropdown.js';
     $listcssjs[] = 'catalog/view/theme/'.$config->get( 'config_template' ).'/js/common.js';
     $listcssjs[] = 'catalog/view/theme/'.$config->get( 'config_template' ).'/js/jquery.cookie.js';
-    
+
     // Nivo slider
     if($config->get( 'slideshow_module' ) != '') $listcssjs[] = 'catalog/view/theme/' . $config->get( 'config_template' ) . '/js/jquery.nivo.slider.pack.js';
-    
+
     // Carousel brands
     if($config->get( 'carousel_module' ) != '') $listcssjs[] = 'catalog/view/theme/'.$config->get( 'config_template' ).'/js/jquery.jcarousel.min.js';
- 
+
     ?>
-        	
+
     <?php echo $theme_options->compressorCodeJs( $config->get( 'config_template' ), $listcssjs, $theme_options->get( 'compressor_code_status' ), HTTP_SERVER ); ?>
     <script type="text/javascript" src="catalog/view/theme/<?php echo $config->get( 'config_template' ); ?>/js/jquery.themepunch.plugins.min.js"></script>
-  
+
     	<script type="text/javascript" src="catalog/view/theme/<?php echo $config->get( 'config_template' ); ?>/js/jquery.themepunch.revolution.min.js"></script>
 		<script type="text/javascript" src="catalog/view/theme/<?php echo $config->get( 'config_template' ); ?>/js/jquery.magnific-popup.min.js"></script>
-		
- 
-	
-	<script type="text/javascript" src="catalog/view/theme/<?php echo $config->get( 'config_template' ); ?>/js/owl.carousel.min.js"></script> 
-	<script type="text/javascript" src="catalog/view/theme/<?php echo $config->get( 'config_template' ); ?>/js/jquery.jcarousel.min.js"></script> 
-	
+
+
+
+	<script type="text/javascript" src="catalog/view/theme/<?php echo $config->get( 'config_template' ); ?>/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="catalog/view/theme/<?php echo $config->get( 'config_template' ); ?>/js/jquery.jcarousel.min.js"></script>
+
 	<script type="text/javascript">
 	var transition = 'slide';
 	var animation_time = 300;
@@ -189,14 +189,14 @@ $modules = new Modules($this->registry);
 	<?php if($theme_options->get( 'custom_code_javascript_status' ) == 1) { ?>
 	<script type="text/javascript" src="catalog/view/theme/<?php echo $config->get( 'config_template' ); ?>/skins/store_<?php echo $theme_options->get( 'store' ); ?>/<?php echo $theme_options->get( 'skin' ); ?>/js/custom_code.js"></script>
 	<?php } ?>
-	
 
-	<?php echo $google_analytics; ?>    
+
+	<?php echo $google_analytics; ?>
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<script src="catalog/view/theme/<?php echo $config->get( 'config_template' ); ?>/js/respond.min.js"></script>
 	<![endif]-->
-</head>	
+</head>
 <body>
 
 <?php if($theme_options->get( 'widget_facebook_status' ) == 1) { ?>
@@ -210,24 +210,24 @@ $modules = new Modules($this->registry);
 		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
-		
+
 		<div class="fb-like-box fb_iframe_widget" profile_id="<?php echo $theme_options->get( 'widget_facebook_id' ); ?>" data-colorscheme="light" data-height="370" data-width="243" data-connections="16" fb-xfbml-state="rendered"></div>
 	</div>
-	
-	<script type="text/javascript">    
-	$(function() {  
-		$(".facebook_right").hover(function() {            
-			$(".facebook_right").stop(true, false).animate({right: "0"}, 800, 'easeOutQuint');        
-		}, function() {            
-			$(".facebook_right").stop(true, false).animate({right: "-250"}, 800, 'easeInQuint');        
-		}, 1000);    
-	
-		$(".facebook_left").hover(function() {            
-			$(".facebook_left").stop(true, false).animate({left: "0"}, 800, 'easeOutQuint');        
-		}, function() {            
-			$(".facebook_left").stop(true, false).animate({left: "-250"}, 800, 'easeInQuint');        
-		}, 1000);    
-	});  
+
+	<script type="text/javascript">
+	$(function() {
+		$(".facebook_right").hover(function() {
+			$(".facebook_right").stop(true, false).animate({right: "0"}, 800, 'easeOutQuint');
+		}, function() {
+			$(".facebook_right").stop(true, false).animate({right: "-250"}, 800, 'easeInQuint');
+		}, 1000);
+
+		$(".facebook_left").hover(function() {
+			$(".facebook_left").stop(true, false).animate({left: "0"}, 800, 'easeOutQuint');
+		}, function() {
+			$(".facebook_left").stop(true, false).animate({left: "-250"}, 800, 'easeInQuint');
+		}, 1000);
+	});
 	</script>
 </div>
 <?php } ?>
@@ -238,22 +238,22 @@ $modules = new Modules($this->registry);
 	<div class="twitter-content">
 		<a class="twitter-timeline"  href="https://twitter.com/@<?php echo $theme_options->get( 'widget_twitter_user_name' ); ?>" data-chrome="noborders" data-tweet-limit="<?php echo $theme_options->get( 'widget_twitter_limit' ); ?>"  data-widget-id="<?php echo $theme_options->get( 'widget_twitter_id' ); ?>" data-theme="light" data-related="twitterapi,twitter" data-aria-polite="assertive">Tweets by @<?php echo $theme_options->get( 'widget_twitter_user_name' ); ?></a>
 	</div>
-	
-	<script type="text/javascript">    
+
+	<script type="text/javascript">
 	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-	$(function() {  
-		$(".twitter_right").hover(function() {            
-			$(".twitter_right").stop(true, false).animate({right: "0"}, 800, 'easeOutQuint');        
-		}, function() {            
-			$(".twitter_right").stop(true, false).animate({right: "-250"}, 800, 'easeInQuint');        
-		}, 1000);    
-	
-		$(".twitter_left").hover(function() {            
-			$(".twitter_left").stop(true, false).animate({left: "0"}, 800, 'easeOutQuint');        
-		}, function() {            
-			$(".twitter_left").stop(true, false).animate({left: "-250"}, 800, 'easeInQuint');        
-		}, 1000);    
-	});  
+	$(function() {
+		$(".twitter_right").hover(function() {
+			$(".twitter_right").stop(true, false).animate({right: "0"}, 800, 'easeOutQuint');
+		}, function() {
+			$(".twitter_right").stop(true, false).animate({right: "-250"}, 800, 'easeInQuint');
+		}, 1000);
+
+		$(".twitter_left").hover(function() {
+			$(".twitter_left").stop(true, false).animate({left: "0"}, 800, 'easeOutQuint');
+		}, function() {
+			$(".twitter_left").stop(true, false).animate({left: "-250"}, 800, 'easeInQuint');
+		}, 1000);
+	});
 	</script>
 </div>
 <?php } ?>
@@ -266,23 +266,23 @@ $modules = new Modules($this->registry);
 		<?php $custom_content = $theme_options->get( 'widget_custom_content' ); ?>
 		<?php if(isset($custom_content[$lang_id])) echo html_entity_decode($custom_content[$lang_id]); ?>
 	</div>
-	
-	<script type="text/javascript">    
-	$(function() {  
-		$(".custom_right").hover(function() {            
-			$(".custom_right").stop(true, false).animate({right: "0"}, 800, 'easeOutQuint');        
-		}, function() {            
-			$(".custom_right").stop(true, false).animate({right: "-250"}, 800, 'easeInQuint');        
-		}, 1000);    
-	
-		$(".custom_left").hover(function() {            
-			$(".custom_left").stop(true, false).animate({left: "0"}, 800, 'easeOutQuint');        
-		}, function() {            
-			$(".custom_left").stop(true, false).animate({left: "-250"}, 800, 'easeInQuint');        
-		}, 1000);    
-	});  
+
+	<script type="text/javascript">
+	$(function() {
+		$(".custom_right").hover(function() {
+			$(".custom_right").stop(true, false).animate({right: "0"}, 800, 'easeOutQuint');
+		}, function() {
+			$(".custom_right").stop(true, false).animate({right: "-250"}, 800, 'easeInQuint');
+		}, 1000);
+
+		$(".custom_left").hover(function() {
+			$(".custom_left").stop(true, false).animate({left: "0"}, 800, 'easeOutQuint');
+		}, function() {
+			$(".custom_left").stop(true, false).animate({left: "-250"}, 800, 'easeInQuint');
+		}, 1000);
+	});
 	</script>
-	
+
 </div>
 <?php } ?>
 
@@ -345,7 +345,7 @@ $modules = new Modules($this->registry);
 		});
 		return false;
 	});
-	
+
 	$('#quickview').on('click', '#button-cart', function () {
 		$('#quickview').modal('hide');
 		cart.add($(this).attr("rel"));
@@ -355,28 +355,23 @@ $modules = new Modules($this->registry);
 <div class="fixed-body">
 		<div id="main" class="main-fixed">
 
-		
-		
+
+
 		<header>
 			<div id="top-line">
 				<div class="container">
 					<div class="row">
 
-						
+
 						<div class="col-sm-6 hidden-xs">
 							<div id="welcome">
 								<?php if($theme_options->get( 'welcome_text', $config->get( 'config_language_id' ) ) != '') { echo html_entity_decode($theme_options->get( 'welcome_text', $config->get( 'config_language_id' ) )); } else { echo ''; } ?>
 							</div>
 						</div>
-				  
+
 						<div class="col-sm-6 col-xs-12 hidden-xs">
-							
+
 								<div class="quick-access">
-									
-								
-									
-									
-									
 									<div class="dropdown  my-account currency">
 										<?php echo $currency; ?>
 									</div>
@@ -384,13 +379,13 @@ $modules = new Modules($this->registry);
 									<div class="dropdown  my-account language">
 										<?php echo $language; ?>
 									</div>
-									
+
 									<div class="dropdown  my-account tg-account hidden-xs hidden-sm">
 										<div id="my-account">
 											<div class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
 												<?php echo $text_login; ?>
 											</div>
-											
+
 											<ul class="dropdown-menu"  role="menu">
 												<?php if ($logged) { ?>
 												<li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
@@ -404,13 +399,13 @@ $modules = new Modules($this->registry);
 												<li><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a></li>
 												<li><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></li>
 												<?php } ?>
-											</ul>	
-										</div>	
+											</ul>
+										</div>
 									</div>
-	
-								</div>		
+
+								</div>
 						</div>
-						
+
 						<div class="visible-xs col-xs-12" style="text-align:center;display:inline-block;">
 							<div class="my-account"	style="display:inline-block!important;">
 										<?php echo $currency; ?>
@@ -418,18 +413,18 @@ $modules = new Modules($this->registry);
 							<div class="my-account"	style="display:inline-block!important;">
 										<?php echo $language; ?>
 							</div>
-							
+
 							<div id="my-login" style="display:inline-block!important;">
 								<a href="<?php echo $account; ?>"><?php echo $text_account; ?></a>
-							</div>	
+							</div>
 						</div>
-						
-						
+
+
 					</div>
-				</div>	
+				</div>
 			</div>
-			
-			<div id="header">	
+
+			<div id="header">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 logo-inner">
@@ -439,28 +434,28 @@ $modules = new Modules($this->registry);
 								</a>
 							</div>
 						</div>
-						
+
 						<!-- Search Holder -->
 						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hidden-xs">
 									<div id="search" class="col-lg-8 col-md-8 col-sm-8 col-xs-12" style="padding: 0px;">
 										<input type="text" name="search" placeholder="<?php if($theme_options->get( 'search_text', $config->get( 'config_language_id' ) ) != '') { echo html_entity_decode($theme_options->get( 'search_text', $config->get( 'config_language_id' ) )); } else { echo 'Search'; } ?>" value="" />
 										<span class="button-search"><?php if($theme_options->get( 'search_text', $config->get( 'config_language_id' ) ) != '') { echo html_entity_decode($theme_options->get( 'search_text', $config->get( 'config_language_id' ) )); } else { echo 'Search'; } ?></span>
 									</div>
-						</div>	
-						
+						</div>
+
 						<!-- Cart Holder -->
 						<div id="header-right" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 hidden-xs">
-							<?php echo $cart; ?>						
-						</div>	
+							<?php echo $cart; ?>
+						</div>
 
-							
-						
-						
-	
+
+
+
+
 					</div>
 				</div>
-			</div>	
-			
+			</div>
+
 			<div class="visible-xs col-xs-12" style="text-align:center;display:inline-block; margin-bottom:20px;">
 						<div id="megaMenuToggle">
 							<div class="megamenuToogle-wrapper">
@@ -471,34 +466,34 @@ $modules = new Modules($this->registry);
 								</div>
 							</div>
 						</div>
-						
+
 						<a href="<?php echo $shopping_cart; ?>">
 						<div class="tg-search" style="display:inline-block;">
 							<span class="fa fa-shopping-cart"></span>
-						</div>	
+						</div>
 						</a>
 						<div class="tg-search" style="display:inline-block;">
 										<div id="tg-search2">
 											<div class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
 												<span class="fa fa-search"></span>
 											</div>
-											
+
 											<ul class="dropdown-menu keep_open">
 												<li>
-												
+
 												<div id="search">
 														<input type="text" name="search2" placeholder="<?php if($theme_options->get( 'search_text', $config->get( 'config_language_id' ) ) != '') { echo html_entity_decode($theme_options->get( 'search_text', $config->get( 'config_language_id' ) )); } else { echo 'Search'; } ?>" value="" />
 														<span class="button-search2 fa fa-search"></span>
 												</li>
-											</ul>	
-										</div>	
-						</div>	
-						
-					
-					</div>	
-						
-						
-						<?php 
+											</ul>
+										</div>
+						</div>
+
+
+					</div>
+
+
+						<?php
 					$menu = $modules->getModules('menu');
 					if( count($menu) ) {
 						foreach ($menu as $module) {
@@ -510,7 +505,7 @@ $modules = new Modules($this->registry);
 							<div class="megamenu-wrapper" >
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-left: 0px; padding-right: 0px;">
 											<ul class="megamenu">
-												
+
 												<?php foreach ($categories as $category) { ?>
 												<?php if ($category['children']) { ?>
 												<li class="with-sub-menu hover"><p class="close-menu"></p>
@@ -520,7 +515,7 @@ $modules = new Modules($this->registry);
 													<a href="<?php echo $category['href']; ?>"><span><strong><?php echo $category['name']; ?></strong></span></a>
 												<?php } ?>
 													<?php if ($category['children']) { ?>
-													<?php 
+													<?php
 														$width = '100%';
 														$row_fluid = 3;
 														if($category['column'] == 1) { $width = '220px'; $row_fluid = 12; }
@@ -552,14 +547,14 @@ $modules = new Modules($this->registry);
 												<?php } ?>
 											</ul>
 								</div>
-							</div>		
+							</div>
 					</div>
 					<?php
 					}
 					?>
-			
-			
-					
+
+
+
 		<?php $slideshow = $modules->getModules('slideshow'); ?>
 	<?php  if(count($slideshow)) { ?>
 	<!-- Slider -->
@@ -570,7 +565,7 @@ $modules = new Modules($this->registry);
 				<?php } ?>
 	</div>
 	</div>
-	<?php } ?>			
+	<?php } ?>
 
-	
+
 </header>
