@@ -1,6 +1,6 @@
-<?php echo $header; 
+<?php echo $header;
 $theme_options = $this->registry->get('theme_options');
-$config = $this->registry->get('config'); 
+$config = $this->registry->get('config');
 include('catalog/view/theme/'.$config->get('config_template').'/template/themeglobal/themeglobal_top.tpl'); ?>
 
 <div itemscope itemtype="http://data-vocabulary.org/Product">
@@ -30,13 +30,13 @@ include('catalog/view/theme/'.$config->get('config_template').'/template/themegl
 								lensFadeOut: 500,
 				    		});
 			    		<?php } ?>
-			    		
+
 			    		$('.thumbnails a').click(function() {
 			    			var smallImage = $(this).attr('data-image');
 			    			var largeImage = $(this).attr('data-zoom-image');
-			    			var ez =   $('#image').data('elevateZoom');	
-			    			$('#ex1').attr('href', largeImage);  
-			    			ez.swaptheimage(smallImage, largeImage); 
+			    			var ez =   $('#image').data('elevateZoom');
+			    			$('#ex1').attr('href', largeImage);
+			    			ez.swaptheimage(smallImage, largeImage);
 			    			return false;
 			    		});
 			    	});
@@ -59,7 +59,7 @@ include('catalog/view/theme/'.$config->get('config_template').'/template/themegl
 						</div>
 			      	  </div>
 			      	  <?php } ?>
-			      	  
+
 				      <div class="col-sm-<?php if($theme_options->get( 'position_image_additional' ) == 2) { echo 10; } else { echo 12; } ?>">
 				      	<?php if ($thumb) { ?>
 					      <div class="product-image <?php if($theme_options->get( 'product_image_zoom' ) != 2) { if($theme_options->get( 'product_image_zoom' ) == 1) { echo 'inner-cloud-zoom'; } else { echo 'cloud-zoom'; } } ?>">
@@ -77,7 +77,7 @@ include('catalog/view/theme/'.$config->get('config_template').'/template/themegl
 					      	 	<div class="sale"><?php echo $text_sale; ?></div>
 					      	 	<?php } ?>
 					      	 <?php } ?>
-					      	 
+
 					     	 <a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" id="ex1"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" id="image" itemprop="image" data-zoom-image="<?php echo $popup; ?>" /></a>
 					      </div>
 					  	 <?php } else { ?>
@@ -86,7 +86,7 @@ include('catalog/view/theme/'.$config->get('config_template').'/template/themegl
 					  	 </div>
 					  	 <?php } ?>
 				      </div>
-				      
+
 				      <?php if ($images && $theme_options->get( 'position_image_additional' ) != 2) { ?>
 				      <div class="col-sm-12">
 					      <div class="thumbnails clearfix">
@@ -140,7 +140,7 @@ include('catalog/view/theme/'.$config->get('config_template').'/template/themegl
 			      </div>
 			      <?php } ?>
 			     </div>
-			     
+
 			     <div id="product">
 			      <?php if ($options) { ?>
 			      <div class="options">
@@ -267,7 +267,7 @@ include('catalog/view/theme/'.$config->get('config_template').'/template/themegl
 			        <?php } ?>
 			      </div>
 			      <?php } ?>
-			      
+
 			      <?php if ($recurrings) { ?>
 			      <div class="options">
 			          <h2><?php echo $text_payment_recurring ?></h2>
@@ -282,7 +282,7 @@ include('catalog/view/theme/'.$config->get('config_template').'/template/themegl
 			          </div>
 			      </div>
 			      <?php } ?>
-			      
+
 
 						<div class="cart">
 			        <div class="add-to-cart clearfix">
@@ -295,32 +295,32 @@ include('catalog/view/theme/'.$config->get('config_template').'/template/themegl
 			          <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
 			          &nbsp;
 						<?php if($theme_options->get( 'display_add_to_cart' ) != '0' ) { ?>
-							<div class="cart-holder">	
+							<div class="cart-holder">
 								<input type="button" value="<?php if($theme_options->get( 'add_to_cart_text', $config->get( 'config_language_id' ) ) != '') { echo $theme_options->get( 'add_to_cart_text', $config->get( 'config_language_id' ) ); } else { echo 'Add to cart'; } ?>" id="button-cart" rel="<?php echo $product_id; ?>" class="button" />
 								<a href="<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>" class="button" id="button-more-details"><?php if($theme_options->get( 'more_details_text', $config->get( 'config_language_id' ) ) != '') { echo html_entity_decode($theme_options->get( 'more_details_text', $config->get( 'config_language_id' ) )); } else { echo 'More details'; } ?></a>
 							</div>
 						<?php } ?>
-						
+
 						<?php if($theme_options->get( 'display_add_to_compare' ) != '0') { ?>
 							<div class="compare-holder">
 								<a onclick="compare.add('<?php echo $product_id; ?>');" title="<?php if($theme_options->get( 'add_to_compare_text', $config->get( 'config_language_id' ) ) != '') { echo $theme_options->get( 'add_to_compare_text', $config->get( 'config_language_id' ) ); } else { echo 'Add to compare'; } ?>" class="fa  fa-external-link product-icon"></a>
 							</div>
-							
-						<?php } ?>		
-						
+
+						<?php } ?>
+
 						<?php if($theme_options->get( 'display_add_to_wishlist' ) != '0' ) { ?>
-						
-							<div class="wishlist-holder">				
+
+							<div class="wishlist-holder">
 								<a onclick="wishlist.add('<?php echo $product_id; ?>');" title="<?php if($theme_options->get( 'add_to_wishlist_text', $config->get( 'config_language_id' ) ) != '') { echo $theme_options->get( 'add_to_wishlist_text', $config->get( 'config_language_id' ) ); } else { echo 'Add to wishlist'; } ?>" class="fa fa-heart-o product-icon"></a>
-						
-														
+
+
 							</div>
-						<?php } ?>		
-						
+						<?php } ?>
+
 					</div>
-							
-						 
-							 
+
+
+
 							<?php if ($minimum > 1) { ?>
 							<div class="minimum"><?php echo $text_minimum; ?></div>
 							<?php } ?>
@@ -342,8 +342,8 @@ include('catalog/view/theme/'.$config->get('config_template').'/template/themegl
 			        <div class="share">
 			        	<!-- AddThis Button BEGIN -->
 			        	<div class="addthis_toolbox addthis_default_style"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a> <a class="addthis_button_tweet"></a> <a class="addthis_button_pinterest_pinit"></a> <a class="addthis_counter addthis_pill_style"></a></div>
-			        	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eeaf54693130e"></script> 
-			        	<!-- AddThis Button END --> 
+			        	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eeaf54693130e"></script>
+			        	<!-- AddThis Button END -->
 			        </div>
 			        <?php } ?>
 			      </div>
@@ -351,7 +351,7 @@ include('catalog/view/theme/'.$config->get('config_template').'/template/themegl
 		    	</div>
 		    </div>
     	</div>
-    	
+
     	<?php if($theme_options->get( 'custom_block', 'product_page', $config->get( 'config_language_id' ), 'status' ) == 1) { ?>
     	<div class="col-sm-3">
     		<div class="product-block">
@@ -367,25 +367,25 @@ include('catalog/view/theme/'.$config->get('config_template').'/template/themegl
     	<?php } ?>
     </div>
   </div>
-  <?php 
+  <?php
   	  $language_id = $config->get( 'config_language_id' );
 	  $tabs = array();
-	  
+
 	  $tabs[] = array(
 	  	'heading' => $tab_description,
 	  	'content' => 'description',
 	  	'sort' => 1
 	  );
-	  
-	  if ($attribute_groups) { 
+
+	  if ($attribute_groups) {
 		  $tabs[] = array(
 		  	'heading' => $tab_attribute,
 		  	'content' => 'attribute',
 		  	'sort' => 3
 		  );
 	  }
-	  
-	  if ($review_status) { 
+
+	  if ($review_status) {
 	  	  $tabs[] = array(
 	  	  	'heading' => $tab_review,
 	  	  	'content' => 'review',
@@ -393,7 +393,7 @@ include('catalog/view/theme/'.$config->get('config_template').'/template/themegl
 	  	  );
 	  }
 
-	  
+
 	  usort($tabs, "cmp_by_optionNumber");
   ?>
   <div id="tabs" class="htabs">
@@ -497,17 +497,17 @@ include('catalog/view/theme/'.$config->get('config_template').'/template/themegl
   </div>
   <?php } ?>
   <?php if ($products) { ?>
-  <?php 
-  $class = 3; 
-  $id = rand(0, 5000)*rand(0, 5000); 
-  $all = 4; 
-  $row = 4; 
-  
+  <?php
+  $class = 3;
+  $id = rand(0, 5000)*rand(0, 5000);
+  $all = 4;
+  $row = 4;
+
   if($theme_options->get( 'product_per_pow2' ) == 6) { $class = 2; }
   if($theme_options->get( 'product_per_pow2' ) == 5) { $class = 25; }
   if($theme_options->get( 'product_per_pow2' ) == 3) { $class = 4; }
-  
-  if($theme_options->get( 'product_per_pow2' ) > 1) { $row = $theme_options->get( 'product_per_pow2' ); $all = $theme_options->get( 'product_per_pow2' ); } 
+
+  if($theme_options->get( 'product_per_pow2' ) > 1) { $row = $theme_options->get( 'product_per_pow2' ); $all = $theme_options->get( 'product_per_pow2' ); }
   ?>
   <div class="box">
     <?php if($theme_options->get( 'product_scroll_related' ) != '0') { ?>
@@ -515,9 +515,9 @@ include('catalog/view/theme/'.$config->get('config_template').'/template/themegl
 			<?php if ($i > $theme_options->get( 'product_per_pow2' )) { ?>
 				<a class="next-button" href="#myCarousel<?php echo $id; ?>" id="myCarousel<?php echo $id; ?>_next"><span></span></a>
 				<a class="prev-button" href="#myCarousel<?php echo $id; ?>" id="myCarousel<?php echo $id; ?>_prev"><span></span></a>
-			<?php } ?>	
+			<?php } ?>
     <?php } ?>
-  	
+
     <div class="box-heading2"><?php echo $text_related; ?></div>
     <div class="box-content products related-products hidden-xs">
       <div class="box-product">
@@ -563,7 +563,7 @@ include('catalog/view/theme/'.$config->get('config_template').'/template/themegl
 <script type="text/javascript">
 $(document).ready(function() {
   var owl<?php echo $id; ?> = $(".box #myCarousel<?php echo $id; ?> .carousel-inner");
-	
+
   $("#myCarousel<?php echo $id; ?>_next").click(function(){
       owl<?php echo $id; ?>.trigger('owl.next');
       return false;
@@ -572,7 +572,7 @@ $(document).ready(function() {
       owl<?php echo $id; ?>.trigger('owl.prev');
       return false;
   });
-    
+
   owl<?php echo $id; ?>.owlCarousel({
   	  slideSpeed : 500,
       singleItem:true
@@ -592,14 +592,14 @@ $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
 		},
 		success: function(json) {
 			$('.alert, .text-danger').remove();
-			
+
 			if (json['success']) {
 				$('#recurring-description').html(json['success']);
 			}
 		}
 	});
 });
-//--></script> 
+//--></script>
 <script type="text/javascript"><!--
 $('#button-cart').on('click', function() {
 	$.ajax({
@@ -615,7 +615,7 @@ $('#button-cart').on('click', function() {
 				if (json['error']['option']) {
 					for (i in json['error']['option']) {
 						var element = $('#input-option' + i.replace('_', '-'));
-						
+
 						if (element.parent().hasClass('input-group')) {
 							element.parent().after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
 						} else {
@@ -623,26 +623,26 @@ $('#button-cart').on('click', function() {
 						}
 					}
 				}
-				
+
 				if (json['error']['recurring']) {
 					$('select[name=\'recurring_id\']').after('<div class="text-danger">' + json['error']['recurring'] + '</div>');
 				}
-				
+
 				// Highlight any found errors
 				$('.text-danger').parent().addClass('has-error');
 			}
-			
+
 			if (json['success']) {
 				$("#notification .modal-footer").show();
 				$("#notification").modal('show');
-				$("#notification .modal-body p").html(json['success']);	
-				
+				$("#notification .modal-body p").html(json['success']);
+
 				$('#cart #cart_content').load('index.php?route=common/cart/info #cart_content_ajax');
 				$('#cart-total').html(json['total']);
 			}
 		}
 	});
-});//--></script> 
+});//--></script>
 <script type="text/javascript"><!--
 $('.date').datetimepicker({
 	pickTime: false
@@ -656,16 +656,16 @@ $('.datetime').datetimepicker({
 $('.time').datetimepicker({
 	pickDate: false
 });
-		
+
 $('button[id^=\'button-upload\']').on('click', function() {
 	var node = this;
-	
+
 	$('#form-upload').remove();
-	
+
 	$('body').prepend('<form enctype="multipart/form-data" id="form-upload" style="display: none;"><input type="file" name="file" /></form>');
-	
+
 	$('#form-upload input[name=\'file\']').trigger('click');
-	
+
 	$('#form-upload input[name=\'file\']').on('change', function() {
 		$.ajax({
 			url: 'index.php?route=tool/upload',
@@ -683,14 +683,14 @@ $('button[id^=\'button-upload\']').on('click', function() {
 			},
 			success: function(json) {
 				$('.text-danger').remove();
-				
+
 				if (json['error']) {
 					$(node).parent().find('input').after('<div class="text-danger">' + json['error'] + '</div>');
 				}
-				
+
 				if (json['success']) {
 					alert(json['success']);
-					
+
 					$(node).parent().find('input').attr('value', json['code']);
 				}
 			},
@@ -700,17 +700,17 @@ $('button[id^=\'button-upload\']').on('click', function() {
 		});
 	});
 });
-//--></script> 
+//--></script>
 <script type="text/javascript"><!--
 $('#review').delegate('.pagination a', 'click', function(e) {
 	e.preventDefault();
-	
+
     $('#review').fadeOut('slow');
-        
+
     $('#review').load(this.href);
-    
+
     $('#review').fadeIn('slow');
-});         
+});
 
 $('#review').load('index.php?route=product/product/review&product_id=<?php echo $product_id; ?>');
 
@@ -765,43 +765,43 @@ $(document).ready(function() {
 		}
 	});
 });
-//--></script> 
+//--></script>
 
 <script type="text/javascript">
 $.fn.tabs = function() {
 	var selector = this;
-	
+
 	this.each(function() {
-		var obj = $(this); 
-		
+		var obj = $(this);
+
 		$(obj.attr('href')).hide();
-		
+
 		$(obj).click(function() {
 			$(selector).removeClass('selected');
-			
+
 			$(selector).each(function(i, element) {
 				$($(element).attr('href')).hide();
 			});
-			
+
 			$(this).addClass('selected');
-			
+
 			$($(this).attr('href')).show();
-			
+
 			return false;
 		});
 	});
 
 	$(this).show();
-	
+
 	$(this).first().click();
 };
 </script>
 
 <script type="text/javascript"><!--
 $('#tabs a').tabs();
-//--></script> 
+//--></script>
 
-<?php if($theme_options->get( 'product_image_zoom' ) != 2) { 
+<?php if($theme_options->get( 'product_image_zoom' ) != 2) {
 echo '<script type="text/javascript" src="catalog/view/theme/' . $config->get( 'config_template' ) . '/js/jquery.elevateZoom-3.0.3.min.js"></script>';
 } ?>
 
