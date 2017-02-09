@@ -2924,3 +2924,173 @@ table img {
 .newsletter-text { text-align: right;padding-right: 0px; line-height: 39px; color: #000000; font-weight:bold; text-transform: uppercase;font-family: Roboto Condensed,sans-serif;}
 .newsletter-button {text-align: left;padding-left: 0px; margin-top: 1px;}
 #column_left .newsletter-holder, #column_right .newsletter-holder {display: none;}
+
+
+/* custom css starts here */
+
+.customRadio {
+  position: relative;
+  float: left;
+}
+
+.customRadio input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.customRadio label{
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 25px 10px 70px;
+  margin: 10px auto;
+  cursor: pointer;
+	z-index: 9;
+	position: relative;
+	-webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	-ms-transition: all .1s linear;
+	-o-transition: all .1s linear;
+	transition: all .1s linear;
+}
+
+.customRadio:hover label{
+	color: #919191;
+}
+
+.customRadio .check{
+  position: absolute;
+  border: 5px solid #666666;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  top: 20px;
+  left: 20px;
+	z-index: 5;
+	-webkit-transition: border .1s linear;
+	-moz-transition: border .1s linear;
+	-ms-transition: border .1s linear;
+	-o-transition: border .1s linear;
+	transition: border .1s linear;
+}
+
+.customRadio:hover .check {
+  border: 5px solid #919191;
+}
+
+.customRadio .check::before {
+  position: absolute;
+	content: '';
+  border-radius: 100%;
+  height: 14px;
+  width: 14px;
+  top: 3px;
+	left: 3px;
+	-webkit-transition: background .1s linear;
+	-moz-transition: background .1s linear;
+	-ms-transition: background .1s linear;
+	-o-transition: background .1s linear;
+	transition: background .1s linear;
+}
+
+.customRadio input[type=radio]:checked ~ .check {
+  border: 5px solid #d63131;
+}
+
+.customRadio input[type=radio]:checked ~ .check::before{
+  background: #d63131;
+}
+
+.customRadio input[type=radio]:checked ~ label{
+  color: #d63131;
+}
+
+.paymentAddressRadio {
+	float: none;
+}
+
+.paymentAddressRadio label {
+  padding: 20px 25px 5px 35px;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.paymentAddressRadio .check {
+	top: 23px;
+	left: 0px;
+	height: 20px;
+  width: 20px;
+	border: 4px solid #666666;
+}
+
+.paymentAddressRadio .check::before {
+	height: 8px;
+  width: 8px;
+  top: 2px;
+  left: 2px;
+}
+
+.paymentAddressRadio:hover .check {
+  border: 4px solid #919191;
+}
+
+.paymentAddressRadio input[type=radio]:checked ~ .check {
+  border: 4px solid #d63131;
+}
+
+.customCheckbox {
+	display: inline-block;
+	position: relative;
+}
+
+.customCheckbox [type="checkbox"]:not(:checked),
+.customCheckbox [type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+.customCheckbox [type="checkbox"]:not(:checked) + label,
+.customCheckbox [type="checkbox"]:checked + label {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.customCheckbox [type="checkbox"]:not(:checked) + label:before,
+.customCheckbox [type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+	top: 0;
+  width: 25px;
+	height: 25px;
+  border: 2px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+}
+
+.customCheckbox [type="checkbox"]:not(:checked) + label:after,
+.customCheckbox [type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: 0;
+	left: 4px;
+  font-size: 22px;
+  line-height: 26px;
+  color: #09ad7e;
+  transition: all .2s;
+}
+
+.customCheckbox [type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.customCheckbox [type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.customCheckbox label:hover:before {
+  border: 2px solid #4778d9 !important;
+}
