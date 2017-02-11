@@ -151,3 +151,5 @@
 2017-01-12 14:12:47 - PHP Notice:  Undefined index: shipping_address in C:\wamp\www\lucknow-handicraft\catalog\controller\common\header.php on line 50
 2017-01-12 14:12:47 - PHP Notice:  Undefined index: shipping_address in C:\wamp\www\lucknow-handicraft\catalog\controller\common\header.php on line 51
 2017-01-12 14:13:06 - PHP Notice:  Undefined index: shipping_address in C:\wamp\www\lucknow-handicraft\catalog\controller\common\header.php on line 50
+2017-02-11 13:45:25 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\wamp\www\lucknow-handicraft\system\library\mail.php on line 164
+2017-02-11 13:45:26 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\wamp\www\lucknow-handicraft\system\library\mail.php on line 164
