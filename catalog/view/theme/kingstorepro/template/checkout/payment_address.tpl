@@ -1,9 +1,9 @@
 <form class="form-horizontal">
   <?php if ($addresses) { ?>
-  <div class="radio">
-    <label>
-      <input type="radio" name="payment_address" value="existing" checked="checked" />
-      <?php echo $text_address_existing; ?></label>
+  <div class="customRadio paymentAddressRadio">
+      <input type="radio" id="paymentAddressDefault" name="payment_address" value="existing" checked="checked" />
+      <label for="paymentAddressDefault"><?php echo $text_address_existing; ?></label>
+      <div class="check"></div>
   </div>
   <div id="payment-existing">
     <select name="address_id" class="form-control">
@@ -16,10 +16,10 @@
       <?php } ?>
     </select>
   </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="payment_address" value="new" />
-      <?php echo $text_address_new; ?></label>
+  <div class="customRadio paymentAddressRadio">
+      <input type="radio" id="paymentAddressNew" name="payment_address" value="new" />
+      <label for="paymentAddressNew"><?php echo $text_address_new; ?></label>
+      <div class="check"></div>
   </div>
   <?php } ?>
   <br />
@@ -221,12 +221,12 @@ $('input[name=\'payment_address\']').on('change', function() {
 $('#collapse-payment-address .form-group[data-sort]').detach().each(function() {
 	if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $('#collapse-payment-address .form-group').length) {
 		$('#collapse-payment-address .form-group').eq($(this).attr('data-sort')).before(this);
-	} 
-	
+	}
+
 	if ($(this).attr('data-sort') > $('#collapse-payment-address .form-group').length) {
 		$('#collapse-payment-address .form-group:last').after(this);
 	}
-		
+
 	if ($(this).attr('data-sort') < -$('#collapse-payment-address .form-group').length) {
 		$('#collapse-payment-address .form-group:first').before(this);
 	}
@@ -259,7 +259,7 @@ $('#collapse-payment-address button[id^=\'button-payment-custom-field\']').on('c
 			},
 			success: function(json) {
 				$('.text-danger').remove();
-				
+
 				if (json['error']) {
 					$(node).parent().find('input[name^=\'custom_field\']').after('<div class="text-danger">' + json['error'] + '</div>');
 				}
