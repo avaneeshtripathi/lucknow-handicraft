@@ -4,13 +4,13 @@ $_['heading_title']                  = 'Checkout';
 
 // Text
 $_['text_cart']                      = 'Shopping Cart';
-$_['text_checkout_option']           = 'Step 1: Checkout Options';
-$_['text_checkout_account']          = 'Step 2: Account &amp; Billing Details';
-$_['text_checkout_payment_address']  = 'Step 2: Billing Details';
-$_['text_checkout_shipping_address'] = 'Step 3: Delivery Details';
-$_['text_checkout_shipping_method']  = 'Step 4: Delivery Method';
-$_['text_checkout_payment_method']   = 'Step 5: Payment Method';
-$_['text_checkout_confirm']          = 'Step 6: Confirm Order';
+$_['text_checkout_option']           = 'Checkout Options';
+$_['text_checkout_account']          = 'Account &amp; Billing Details';
+$_['text_checkout_payment_address']  = 'Billing &amp; Shipping Address';
+$_['text_checkout_shipping_address'] = 'Delivery Details';
+$_['text_checkout_shipping_method']  = 'Delivery Method';
+$_['text_checkout_payment_method']   = 'Payment Method';
+$_['text_checkout_confirm']          = 'Confirm Order';
 $_['text_modify']                    = 'Modify &raquo;';
 $_['text_new_customer']              = 'New Customer';
 $_['text_returning_customer']        = 'Returning Customer';
